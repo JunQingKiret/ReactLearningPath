@@ -13,14 +13,14 @@
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 ```
 
-同上导入Bable
+同上导入 Bable
 
 ```js
 <!-- Babel (to use JSX in the browser) -->
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 ```
 
-在\<body>中导入 main.js 文件，并在\<body>中添加一个可溯源的root元素
+在\<body>中导入 main.js 文件，并在 \<body> 中添加一个可溯源的root元素
 
 ```html
 <body>
@@ -33,9 +33,9 @@
 
 ## React代码
 
-创建一个后缀名为.js的文件main.js，并在从中去编写React代码
+创建一个后缀名为.js的文件 main.js ，并在从中去编写 React 代码
 
-我们首先将html文件中的root元素与root节点进行绑定
+我们首先将 html 文件中的 root 元素与 root 节点进行绑定
 
 ```js
 <!-- React -->
@@ -54,14 +54,14 @@ const root = ReactDOM.createRoot(rootElement);
 root.render(<App />);
 ```
 
-在编写一个函数，返回值为html元素是React的特殊写法
+在编写一个函数，返回值为 html 元素是 React 的特殊写法
 
 ```js
 function App() {
   return <h1>hello from react</h1>;
 ```
 
-而返回的根元素只能有一个，所以这里可用React的语法<></>来包含更多的html元素
+而返回的根元素只能有一个，所以这里可用 React 的语法<></>来包含更多的 html 元素
 
 ```js
 function App() {

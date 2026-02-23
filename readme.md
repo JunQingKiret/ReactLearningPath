@@ -14,6 +14,8 @@
   https://github.com/13RTK/React-Concise-Course/tree/main/2026
 - 笔记灵感来源
   https://github.com/wwweirui/ReactLearnSession/blob/main/README.md
+- React官方文档
+  https://react.dev/learn
 
 # 学习方法
 
@@ -21,7 +23,7 @@
 
 # 学习计划
 
-- 每天学习一定内容，在4月份之前学习完react
+- 每天学习一点内容
 
 # 学习目标
 

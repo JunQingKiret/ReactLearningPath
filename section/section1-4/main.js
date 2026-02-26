@@ -1,32 +1,36 @@
 function App() {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const usernameClass =
+    username.length <= 2 && username.length > 0 ? "input-error" : "";
+  const passwordClass =
+    password.length <= 2 && password.length > 0 ? "input-error" : "";
   function handleSubmit(event) {
     event.preventDefault();
+    if (usernameClass.length > 0 || passwordClass.length > 0) {
+      alert("Invalid username or password");
+      return;
+    }
     alert(`username:${username} Password:${password}`);
     setUsername("");
     setPassword("");
   }
+
   return (
-    <main
-      style={{
-        border: "1px solid black",
-        textAlign: "center",
-      }}
-    >
+    <main>
       <h2>Login Form</h2>
       <form onSubmit={handleSubmit}>
         <input
-          style={{ margin: "2px" }}
           type="text"
           value={username}
+          className={usernameClass}
           onChange={(event) => setUsername(event.target.value)}
         ></input>
         <br></br>
         <input
-          style={{ margin: "2px" }}
           type="password"
           value={password}
+          className={passwordClass}
           onChange={(event) => setPassword(event.target.value)}
         ></input>
         <br></br>

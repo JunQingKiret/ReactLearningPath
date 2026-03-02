@@ -4,7 +4,7 @@
 
 在上一次我们给表单添加了样式并把样式整合到单独的 style.css
 这一次我们继续完善表单，给用户添加约束：用户在输入框下输入的长度是否符合要求
-当然，我们可以根据 react 的语法，在 \<input> 中直接添加 className ，在里面编写逻辑
+当然，我们可以根据 React 的语法，在 \<input> 中直接添加 className ，在里面编写逻辑
 
 ```jsx
 <input
@@ -34,7 +34,7 @@ className={()=> computedUsernameClass()}
 
 ### derived state
 
-但是在 react 中上面这种是不可行的，那么就需要用到 react 中的 derived state 语法。新建一个普通的变量进行返回逻辑
+但是在 React 中上面这种是不可行的，那么就需要用到 React 中的 derived state 语法。新建一个普通的变量进行返回逻辑
 
 ```jsx
 const usernameClass =

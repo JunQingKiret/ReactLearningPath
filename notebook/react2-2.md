@@ -69,3 +69,5 @@ npm install -g pnpm@latest-10
 
 pnpm i
 ```
+
+同样的，pnnm也会继承npm的配置，不需要在进行相关的镜像配置
